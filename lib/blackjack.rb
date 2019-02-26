@@ -52,9 +52,10 @@ def runner
   welcome
   initial_round
   sum = deal_card + deal_card
+  total = deal_card
   until sum > 21
     hit? (sum)
-    display_card_total (deal_card)
+    display_card_total (total)
   end
   end_game
 end
