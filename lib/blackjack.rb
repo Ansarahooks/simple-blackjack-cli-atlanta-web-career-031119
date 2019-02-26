@@ -49,5 +49,12 @@ end
 #####################################################
 
 def runner
-
+  welcome
+  initial_round
+  sum = deal_card + deal_card
+  until sum > 21
+    hit? (sum)
+    display_card_total (deal_card)
+  end
+  end_game
 end
